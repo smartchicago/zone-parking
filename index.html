@@ -27,14 +27,14 @@
     <script>
       function main() {
         cartodb.createVis('map', 'http://jkalov.cartodb.com/api/v2/viz/d52e0db0-8654-11e4-9a46-0e9d821ea90d/viz.json', {
-            shareable: false,
+            shareable: true,
             title: true,
             description: true,
             search: true,
             tiles_loader: true,
             center_lat: 41.85,
             center_lon: -87.65,
-            zoom: 12
+            zoom: 11
         })
         .done(function(vis, layers) {
           // layer 0 is the base layer, layer 1 is cartodb layer
