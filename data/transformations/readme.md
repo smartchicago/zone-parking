@@ -1,4 +1,5 @@
 Psuedo description of creating data (I will expand this soon):
+
 1. Get Parking Zone data from https://data.cityofchicago.org/Transportation/Parking-Permit-Zones/u9xt-hiju
 2. Get Street Center lines from https://data.cityofchicago.org/Transportation/Street-Center-Lines/6imu-meau
 3. For each zone record in (1), find the matching street center line for both address_range__low and address_range__high by matching street name and checking if it is within the segment's address range. (see add_transid_to_zones.sql)
